@@ -1,0 +1,15 @@
+{
+  "name": "Facebook video player",
+  "version": "0.1.0",
+  "description": "Play recognized video contents in a fixed block on the screen.",
+  "background_page": "background.html",
+  "permissions" : ["tabs","http://*.facebook.com/","https://*.facebook.com/"],
+   "icons": {"16": "16.png", "128": "128.png"},
+   "content_scripts": [
+    {
+      "matches": ["http://*.facebook.com/*","https://*.facebook.com/*"],
+      "js": ["jquery.min.js", "content_script.js"],
+	  "run_at": "document_end"
+    }
+  ]
+}
