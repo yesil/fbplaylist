@@ -14,7 +14,7 @@ var doIt = function(){
 					$("#storyContent-"+idx).css("margin","20px");
 					$("#fbplaylist").css("display","block");
 					$("#"+storyId+" h6").css("width","400px");
-					$('<a class="gapat" style="display:inline-block; color:red; background-color:black; width:32px; height:24px; text-align:center; vertical-align:middle;" title="close" href="#">X</a>').appendTo("#"+storyId+" h6");
+					$('<a class="gapat" style="display:inline-block; color:red; background-color:black; width:32px; height:24px; text-align:center; vertical-align:middle;position: absolute;top: -10px;right: 10px;" title="close" href="#">X</a>').appendTo("#storyContent-"+idx);
 					$("#"+storyId+" .storyInnerContent").css("width","410px");
 					$("#"+storyId).css("margin-bottom","20px");
 					var parent = $("#"+storyId).get(0).parentElement;
